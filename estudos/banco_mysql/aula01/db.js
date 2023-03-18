@@ -22,4 +22,18 @@ const inserirPessoas = async (pessoa) => {
     await conect.query(sql, valores)
 }
 
-module.exports = {todasPessoas, inserirPessoas}
+const updatePessoas = async (id, pessoa) => {
+    const conect = await conectar()
+    const sql = 'update pessoas set nome=?, idade=? where id=?'
+    const valores = [pessoa.nome, pessoa.idade, id]
+    await conect.query(sql, valores)
+}
+
+const deletePessoa = async (pessoa) => {
+    const conect = await conectar()
+    const sql = 'delete from pessoas where nome=? and idade=?'
+    const valores = [pessoa.nome, pessoa.idade]
+    await conect.query(sql, valores)
+}
+
+module.exports = {todasPessoas, inserirPessoas, updatePessoas, deletePessoa}
