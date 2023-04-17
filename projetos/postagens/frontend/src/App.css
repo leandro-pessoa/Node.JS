@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(59, 59, 82);
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(93, 93, 110);
+    border-radius: 10px;
+}
+
+main{
+    max-width: 700px;
+    margin: auto;
+}
+
+button{
+    padding: 3px 10px;
+    font-size: 0.9em;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255, 188, 63);
+    color: white;
+}
+button:hover{
+    background-color: rgb(255, 197, 90);
+    cursor: pointer;
+    transform: translate(-1px, -1px);
+    transition: transform .2s;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.11);
+}
+
+div.naoha{
+    color: rgb(203, 203, 253);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+section.postagens{
+    overflow: auto;
+    padding: 20px;
+}
+
+h2.postagens{
+    color: rgb(203, 203, 253);
+    margin: 10px;
+}
+
+div.post{
+    background-color: rgb(233, 233, 233);
+    padding: 10px;
+    border-radius: 4px;
+    margin: auto;
+    margin-bottom: 5px;
+    border: 1px solid rgb(182, 182, 182);
+    width: 90%;
+    max-width: 700px;
+}
+div.post div.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    height: 30px;
+}
+div.post button{
+    margin: 0px 5px;
+}
+
+section.form{
+    background-color: rgb(54, 64, 90);
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 3px;
+    border: 1px solid rgb(93, 93, 110);
+    color: rgb(203, 203, 253);
+}
+
+section.form button{
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+section.form input{
+    background-color: rgb(34, 34, 66);
+    border: 1px solid rgb(93, 93, 110);
+    border-radius: 3px;
+    font-size: 1em;
+    color: white;
+    padding: 2px 5px;
+    outline: none;
+}
+
+textarea{
+    background-color: rgb(34, 34, 66);
+    border: 1px solid rgb(93, 93, 110);
+    border-radius: 3px;
+    font-size: 0.95em;
+    width: 100%;
+    height: 50px;
+    color: white;
+    padding: 2px 5px;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    resize: none;
+}
